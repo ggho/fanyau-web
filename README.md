@@ -20,9 +20,9 @@ Do below in Command prompt.
 4. Now browse the app at `http://localhost:8000/index.html
 
 ## TODO
-[ ] UI: test and fix for other browsers (except Chrome)
-[ ] UI: fix reponsive layout
-[ ] UI: add scrolling animate
-[ ] Support Chinese
-[ ] Add Analytics
+- [ ] UI: test and fix for other browsers (except Chrome)
+- [ ] UI: fix reponsive layout
+- [ ] UI: add scrolling animate
+- [ ] Support Chinese
+- [ ] Add Analytics
 
