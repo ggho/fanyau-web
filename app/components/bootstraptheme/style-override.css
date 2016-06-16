@@ -1,0 +1,30 @@
+body{
+	background: none;
+}
+
+#home {
+	padding-top: 0; 
+}
+
+.contactform select {
+    width: 100%;
+    padding: 1em;
+    border: 1px solid #ccc;
+    margin-bottom: 1em;
+    border-radius: 0;
+    text-indent: 0.5em;
+    height: 3em;
+    background-color: white;
+    
+	border-style: none;
+    outline: 1px solid #ccc; 
+
+}
+
+.contactform select:invalid {
+    color: #bbb;
+}
+
+.contactform input.time{
+	width: 20%;
+}
