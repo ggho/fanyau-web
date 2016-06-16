@@ -5,13 +5,13 @@
 <div id="home">
 	<!-- Slider Starts -->
 	<div class="banner">
-		<img src="images/back.jpg" alt="banner" class="img-responsive">
+		<img src="images/top-banner.jpg" alt="banner" class="img-responsive">
 		<div class="caption">
 			<div class="caption-wrapper">
 				<div class="caption-info">              
 					<i class="fa fa-coffee fa-5x animated bounceInDown"></i>
 					<h1 class="animated bounceInUp">Only one lunch for a new lunch mate</h1>
-					<p class="animated bounceInLeft">the chance for a lifetime soul mate</p>
+					<p class="animated bounceInLeft">a chance for a lifetime soul mate</p>
 					<a href="#contact" class="explore animated bounceInDown"><i class="fa fa-angle-down  fa-3x"></i></a>
 				</div>
 			</div>
@@ -31,51 +31,61 @@
 
 				<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" iframe-onload="iframeLoadedCallback(temp)"></iframe>
 				<form action="https://docs.google.com/forms/d/1zjikVFl9ZGzG4WroEYloA9KSzvyiZP_l2wk19BdL8LA/formResponse" method="post" target="hidden_iframe" >
-				<!-- <form ng-submit="processForm()"> -->
+					<!-- <form ng-submit="processForm()"> -->
 
-				<input type="text" placeholder="Name" name="entry.1163971110" ng-model="formData['entry.1163971110']" required>
-				<select name="entry.2052552941" required>
-					<option value="" disabled selected hidden>Gender</option>
-					<option value="Male">Male</option>
-					<option value="Female">Female</option>
-				</select>
-				<select name="entry.1577935524" required>
-					<option value="" disabled selected hidden>Age</option>
-					<option value="<21">&lt; 21</option>
-					<option value="21-25">21 - 25</option>
-					<option value="26-30">26 - 30</option>
-					<option value="31-35">31 - 35</option>
-					<option value="36-40">36 - 40</option>
-					<option value=">40">&gt; 40</option>
-				</select>
-				<input type="text" placeholder="Office location, e.g. Wan Chai" name="entry.1413818209" required>
-				<input type="text" placeholder="Working industry, e.g. banking, technology..." name="entry.1930472293">
-				<label>
-					<input type="number" placeholder="Lunch hour from" name="entry.1358837890_hour" class="time hour" min="0" max="23"> :
-					<input type="number" placeholder="00" name="entry.1358837890_minute" class="time minute" min="0" max="59" step="15"> -
-					<input type="number" placeholder="Lunch hour to" name="entry.1383656998_hour" class="time hour" min="0" max="23"> :
-					<input type="number" placeholder="00" name="entry.1383656998_minute" class="time minute" min="0" max="59" step="15">
-				</label>
-				<select name="entry.1672791290" required>
-					<option value="" disabled selected hidden>Who to look for?</option>
-					<option value="Male">Male</option>
-					<option value="Female">Female</option>
-					<option value="Any">Any</option>
-				</select>
-				<select name="entry.1518902865" required>
-					<option value="" disabled selected hidden>Looking for a relationship?</option>
-					<option value="Yes">Yes</option>
-					<option value="No">No</option>
-					<option value="Don't care">I don't care</option>
-				</select>
-				<input type="text" placeholder="Tell a bit about your job" name="entry.1436334537">
-				<input type="text" placeholder="Topics that interest you, e.g. movies, traveling..." name="entry.610114913">
-				<input type="text" placeholder="Email" name="entry.1686852758" required>
+					<input type="text" placeholder="Name" name="entry.1163971110" ng-model="formData['entry.1163971110']" required>
+					<select name="entry.2052552941" required>
+						<option value="" disabled selected hidden>Gender</option>
+						<option value="Male">Male</option>
+						<option value="Female">Female</option>
+					</select>
+					<select name="entry.1577935524" required>
+						<option value="" disabled selected hidden>Age</option>
+						<option value="<21">&lt; 21</option>
+						<option value="21-25">21 - 25</option>
+						<option value="26-30">26 - 30</option>
+						<option value="31-35">31 - 35</option>
+						<option value="36-40">36 - 40</option>
+						<option value=">40">&gt; 40</option>
+					</select>
+					<input type="text" placeholder="Office location, e.g. Wan Chai" name="entry.1413818209" required>
+					
+					<input type="text" placeholder="Working industry, e.g. banking, technology..." name="entry.1930472293">
+					<div class="row">
+						<div class="col-sm-3 col-xs-12">
+							<span> Lunch hour :</span>
+						</div>
+						<div class="col-sm-4 col-xs-5">
+							<input type="number" placeholder="00" name="entry.1358837890_hour" class="time hour" value="12" min="0" max="23"> :
+							<input type="number" placeholder="00" name="entry.1358837890_minute" class="time minute" value="00" min="0" max="59" step="15">
+						</div>
+						<div class="col-sm-1 col-xs-2"><span>&nbsp;-&nbsp;</span></div>
+						<div class="col-sm-4 col-xs-5">
+							<input type="number" placeholder="00" name="entry.1383656998_hour" class="time hour" value="13" min="0" max="23"> :
+							<input type="number" placeholder="00" name="entry.1383656998_minute" class="time minute" value="00" min="0" max="59" step="15">
+						</div>
+					</div>
+					
+					<select name="entry.1672791290" required>
+						<option value="" disabled selected hidden>Who to look for?</option>
+						<option value="Male">Male</option>
+						<option value="Female">Female</option>
+						<option value="Any">Any</option>
+					</select>
+					<select name="entry.1518902865" required>
+						<option value="" disabled selected hidden>Looking for a relationship?</option>
+						<option value="Yes">Yes</option>
+						<option value="No">No</option>
+						<option value="Don't care">I don't care</option>
+					</select>
+					<input type="text" placeholder="Tell a bit about your job" name="entry.1436334537">
+					<input type="text" placeholder="Topics that interest you, e.g. movies, traveling..." name="entry.610114913">
+					<input type="text" placeholder="Email" name="entry.1686852758" required>
 
 
-				<!-- <textarea rows="5" placeholder="Message"></textarea> -->
-				<button class="btn btn-primary"><i class="fa fa-paper-plane"></i> Send</button>
-			</form>
+					<!-- <textarea rows="5" placeholder="Message"></textarea> -->
+					<button class="btn btn-primary" type="submit">Apply</button>
+				</form>
 
 			<!-- <pre>
 				{{ formData }}
@@ -87,83 +97,60 @@
 </div>
 
 
-<!-- Test google form -->
-<!-- entry.1163971110:Gigi all
-entry.2052552941:Female
-entry.1577935524:<= 20
-FanYau:IT
-entry.1930472293:IT
-FanYau:Kowloon bay
-entry.1413818209:Kowloon bay
-entry.1358837890_hour:12
-entry.1358837890_minute:00
-entry.1383656998_hour:13
-entry.1383656998_minute:30
-entry.1672791290:Male
-entry.1518902865:No
-FanYau:I love my job!
-entry.1436334537:I love my job!
-FanYau:Movies, tech
-entry.610114913:Movies, tech
-FanYau:gigiho609@gmail.com
-entry.1686852758:gigiho609@gmail.com -->
-
-
-
 <!-- works -->
 <div id="foods"  class=" clearfix grid"> 
 	<figure class="effect-oscar  wowload fadeInUp">
-		<img src="images/portfolio/1.jpg" alt="img01"/>
+		<img src="images/features/feature1.jpg" alt="img01"/>
 		<figcaption>
 			<h2>Opportunity</h2>
 			<p>Use your daily lunch time to meet a person that may change your life. <br/>Every lunch is an opportinity<br>
-				<a href="images/portfolio/1.jpg" title="1" data-gallery>View more</a>
+				<!-- <a href="images/portfolio/1.jpg" title="1" data-gallery>View more</a> -->
 			</p>            
 		</figcaption>
 	</figure>
 	<figure class="effect-oscar  wowload fadeInUp">
-		<img src="images/portfolio/2.jpg" alt="img01"/>
+		<img src="images/features/feature2.jpg" alt="img01"/>
 		<figcaption>
 			<h2>Autonomous</h2>
 			<p>You decide whether you want to meet a person again or not. <br/>All you need to do is to be well prepared.<br>
-				<a href="images/portfolio/2.jpg" title="1" data-gallery>View more</a>
+				<!-- <a href="images/portfolio/2.jpg" title="1" data-gallery>View more</a> -->
 			</p>            
 		</figcaption>
 	</figure>
 	<figure class="effect-oscar  wowload fadeInUp">
-		<img src="images/portfolio/3.jpg" alt="img01"/>
+		<img src="images/features/feature3.jpg" alt="img01"/>
 		<figcaption>
 			<h2>Precise</h2>
 			<p>Matching with AI. We know you more than you do.<br>
-				<a href="images/portfolio/3.jpg" title="1" data-gallery>View more</a>
+				<!-- <a href="images/portfolio/3.jpg" title="1" data-gallery>View more</a> -->
 			</p>            
 		</figcaption>
 	</figure>
 	<figure class="effect-oscar  wowload fadeInUp">
-		<img src="images/portfolio/4.jpg" alt="img01"/>
+		<img src="images/features/feature4.jpg" alt="img01"/>
 		<figcaption>
 			<h2>Safe</h2>
 			<p>You are in total control on what you want to show others.<br>
-				<a href="images/portfolio/4.jpg" title="1" data-gallery>View more</a>
+				<!-- <a href="images/portfolio/4.jpg" title="1" data-gallery>View more</a> -->
 			</p>            
 		</figcaption>
 	</figure>
 
 	<figure class="effect-oscar  wowload fadeInUp">
-		<img src="images/portfolio/5.jpg" alt="img01"/>
+		<img src="images/features/feature5.jpg" alt="img01"/>
 		<figcaption>
 			<h2>Fast</h2>
 			<p>Ten minutes a day to get your lunchmate. <br/>The only thing needed more is to be punctual<br>
-				<a href="images/portfolio/5.jpg" title="1" data-gallery>View more</a>
+				<!-- <a href="images/portfolio/5.jpg" title="1" data-gallery>View more</a> -->
 			</p>            
 		</figcaption>
 	</figure>
 	<figure class="effect-oscar  wowload fadeInUp">
-		<img src="images/portfolio/6.jpg" alt="img01"/>
+		<img src="images/features/feature6.jpg" alt="img01"/>
 		<figcaption>
 			<h2>Easy</h2>
 			<p>Clear UI, you just need few clicks to find your best lunch mate.<br>
-				<a href="images/portfolio/6.jpg" title="1" data-gallery>View more</a>
+				<!-- <a href="images/portfolio/6.jpg" title="1" data-gallery>View more</a> -->
 			</p>            
 		</figcaption>
 	</figure>
