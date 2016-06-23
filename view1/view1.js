@@ -1,7 +1,8 @@
 'use strict';
 
 angular.module('myApp.view1', [
-	'ngRoute'
+	'ngRoute',
+	'smoothScroll'
 	// 'myApp.iframe.onload-directive'
 	])
 
@@ -12,7 +13,7 @@ angular.module('myApp.view1', [
 	});
 }])
 
-.controller('View1Ctrl', ['$scope', '$location', '$http', function($scope, $location, $http) {
+.controller('View1Ctrl', ['$scope', '$location', '$http', 'smoothScroll', function($scope, $location, $http, smoothScroll) {
 
 	$scope.formData = {};
 
@@ -58,6 +59,14 @@ angular.module('myApp.view1', [
    //    		}
       	});
 	};
+
+
+		// if($location.hash() == 'contact'){
+		// 	//scroll to portfo
+		// 	var element = document.getElementById('contact');
+		// 	smoothScroll(element);
+
+		// }
 
 	// $scope.processForm();
 

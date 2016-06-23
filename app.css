@@ -28,3 +28,14 @@
   content: "";
   padding: 0;
 }
+
+
+.carousel-inner > .item {
+  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  -o-transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);         
+}
+
+#carousel-testimonials{
+  text-align: center;
+}
