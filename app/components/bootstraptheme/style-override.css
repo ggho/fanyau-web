@@ -37,3 +37,7 @@ body{
 a .fa{
     color: #fff;
 }
+
+.carousel-indicators .active{
+    background-color: #ccc;
+}
