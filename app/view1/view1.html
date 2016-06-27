@@ -52,45 +52,49 @@
 					</select>
 					<input type="text" placeholder="工作地點，例如：灣仔" name="entry.1413818209" list="districts" required>
 					<datalist id="districts">
-						<option  data-ng-repeat="district in districts" value="{{district}}">
-						</datalist>
+						<option  data-ng-repeat="district in districts" value="{{district}}"/>
+					</datalist>
 
-						<input type="text" placeholder="行業，例如：銀行，資訊科技" name="entry.1930472293">
-						<div class="row">
-							<div class="col-sm-3 col-xs-12">
-								<span> 午飯時間：</span>
-							</div>
-							<div class="col-sm-4 col-xs-5">
-								<input type="number" placeholder="00" name="entry.1358837890_hour" class="time hour" value="12" min="0" max="23"> :
-								<input type="number" placeholder="00" name="entry.1358837890_minute" class="time minute" value="00" min="0" max="59" step="15">
-							</div>
-							<div class="col-sm-1 col-xs-2"><span>&nbsp;-&nbsp;</span></div>
-							<div class="col-sm-4 col-xs-5">
-								<input type="number" placeholder="00" name="entry.1383656998_hour" class="time hour" value="13" min="0" max="23"> :
-								<input type="number" placeholder="00" name="entry.1383656998_minute" class="time minute" value="00" min="0" max="59" step="15">
-							</div>
+					<input type="text" placeholder="行業，例如：銀行，資訊科技" list="industries" name="entry.1930472293">
+					<datalist id="industries">
+						<option  data-ng-repeat="industry in industries" value="{{industry}}"/>
+					</datalist>
+
+					<div class="row">
+						<div class="col-sm-3 col-xs-12">
+							<span> 午飯時間：</span>
 						</div>
+						<div class="col-sm-4 col-xs-5">
+							<input type="number" placeholder="00" name="entry.1358837890_hour" class="time hour" value="12" min="0" max="23"> :
+							<input type="number" placeholder="00" name="entry.1358837890_minute" class="time minute" value="00" min="0" max="59" step="15">
+						</div>
+						<div class="col-sm-1 col-xs-2"><span>&nbsp;-&nbsp;</span></div>
+						<div class="col-sm-4 col-xs-5">
+							<input type="number" placeholder="00" name="entry.1383656998_hour" class="time hour" value="13" min="0" max="23"> :
+							<input type="number" placeholder="00" name="entry.1383656998_minute" class="time minute" value="00" min="0" max="59" step="15">
+						</div>
+					</div>
 
-						<select name="entry.1672791290" required>
-							<option value="" disabled selected hidden>想找誰當飯友？</option>
-							<option value="Male">男</option>
-							<option value="Female">女</option>
-							<option value="Any">都可</option>
-						</select>
-						<select name="entry.1518902865" required>
-							<option value="" disabled selected hidden>你是否在找對象？</option>
-							<option value="Yes">是</option>
-							<option value="No">否</option>
-							<option value="Don't care">都可</option>
-						</select>
-						<input type="text" placeholder="簡單介紹一下自己" name="entry.1436334537">
-						<input type="text" placeholder="你感興趣的話題, 例如：電影、旅遊" name="entry.610114913">
-						<input type="text" placeholder="電郵" name="entry.1686852758" required>
+					<select name="entry.1672791290" required>
+						<option value="" disabled selected hidden>想找誰當飯友？</option>
+						<option value="Male">男</option>
+						<option value="Female">女</option>
+						<option value="Any">都可</option>
+					</select>
+					<select name="entry.1518902865" required>
+						<option value="" disabled selected hidden>你是否在找對象？</option>
+						<option value="Yes">是</option>
+						<option value="No">否</option>
+						<option value="Don't care">都可</option>
+					</select>
+					<input type="text" placeholder="簡單介紹一下自己" name="entry.1436334537">
+					<input type="text" placeholder="你感興趣的話題, 例如：電影、旅遊" name="entry.610114913">
+					<input type="text" placeholder="電郵" name="entry.1686852758" required>
 
 
-						<!-- <textarea rows="5" placeholder="Message"></textarea> -->
-						<button class="btn btn-primary" type="submit">登記</button>
-					</form>
+					<!-- <textarea rows="5" placeholder="Message"></textarea> -->
+					<button class="btn btn-primary" type="submit">登記</button>
+				</form>
 
 			<!-- <pre>
 				{{ formData }}
@@ -175,8 +179,6 @@
 			</div>
 		</div>
 	</div>
-
-
 </div>
 
 <!-- # Footer Ends -->

@@ -26,7 +26,7 @@ body{
 }
 
 .contactform select:invalid {
-    color: #bbb;
+    color: #666;
 }
 
 .contactform input.time{
