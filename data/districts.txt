@@ -1,0 +1,29 @@
+Aberdeen	香港仔
+Admiralty	金鐘
+Causeway Bay	銅鑼灣
+Central	中環
+Chai Wan	柴灣
+Fortress Hill	炮台山
+Happy Valley	跑馬地
+North Point	北角
+Quarry Bay	鰂魚涌
+Shau Kei Wan	筲箕灣
+Sheung Wan	上環
+Taikoo Shing	太古城
+Wanchai	灣仔
+Cheung Sha Wan	長沙灣
+Jordan	佐敦
+Kowloon Bay	九龍灣
+Kowloon Tong	九龍塘
+Kwun Tong	觀塘
+Lai Chi Kok	荔枝角
+Mongkok	旺角
+Ngau Tau Kok	牛頭角
+Prince Edward	太子
+San Po Kong	新蒲崗
+Tsimshatsui	尖沙咀
+Yaumatei	油麻地
+Kwai Chung	葵涌
+Kwai Fong	葵芳
+Shatin	沙田
+Tseung Kwan O	將軍澳
