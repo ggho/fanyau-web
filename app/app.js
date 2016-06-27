@@ -3,11 +3,14 @@
 // Declare app level module which depends on views, and components
 angular.module('myApp', [
   'ngRoute',
+  'angulartics', 
+  'angulartics.google.analytics',
   'myApp.view1',
   'myApp.view2',
   'myApp.version'
 ]).
-config(['$locationProvider', '$routeProvider', '$httpProvider', function($locationProvider, $routeProvider, $httpProvider) {
+config(['$locationProvider', '$routeProvider', '$httpProvider', '$analyticsProvider', 
+	function($locationProvider, $routeProvider, $httpProvider, $analyticsProvider) {
   $locationProvider.hashPrefix('!');
 
   $routeProvider.otherwise({redirectTo: '/view1'});

@@ -13,6 +13,7 @@
     "html5-boilerplate": "^5.3.0",
     "bootstrap": "^3.0.3",
     "jquery": "^2.0.0",
-    "ngSmoothScroll": ""
+    "ngSmoothScroll": "",
+    "angulartics-google-analytics": "~0.2.0"
   }
 }
