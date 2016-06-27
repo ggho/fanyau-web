@@ -2,8 +2,16 @@ body{
 	background: none;
 }
 
+
 #home {
 	padding-top: 0; 
+}
+
+
+.banner .caption-info h1 {
+    font-size: 4em;
+    font-family: inherit;
+    line-height: 2em;
 }
 
 .contactform span{

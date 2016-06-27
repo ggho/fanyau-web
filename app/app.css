@@ -1,5 +1,15 @@
 /* app css stylesheet */
 
+@font-face {
+    font-family: DroidSansFallback;
+    src: url(fonts/DroidSansFallback.ttf);
+}
+
+
+body{
+      font-family: DroidSansFallback, Roboto,Arial,Helvetica;
+}
+
 /*Overiding placeholder colors*/
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color:    #666;
