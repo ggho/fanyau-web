@@ -13,7 +13,7 @@ config(['$locationProvider', '$routeProvider', '$httpProvider', '$analyticsProvi
 	function($locationProvider, $routeProvider, $httpProvider, $analyticsProvider) {
   $locationProvider.hashPrefix('!');
 
-  $routeProvider.otherwise({redirectTo: '/view1'});
+  $routeProvider.otherwise({redirectTo: '/welcome'});
 
   // $httpProvider.defaults.useXDomain = true;
   // delete $httpProvider.defaults.headers.common['X-Requested-With'];
