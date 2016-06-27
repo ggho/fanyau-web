@@ -10,8 +10,8 @@
 			<div class="caption-wrapper">
 				<div class="caption-info">              
 					<i class="fa fa-coffee fa-5x animated bounceInDown"></i>
-					<h1 class="animated bounceInUp">Only one lunch for a new lunch mate</h1>
-					<p class="animated bounceInLeft">a chance for a lifetime soul mate</p>
+					<h1 class="animated bounceInUp">用你每日午飯的時間，遇見有機會改變你一生的飯友</h1>
+					<p class="animated bounceInLeft">一頓午飯，一次機遇，一種連繫</p>
 					<!-- <a href="#contact" class="explore animated bounceInDown"><i class="fa fa-angle-down  fa-3x"></i></a> -->
 
 					<a href="#" scroll-to="contact" class=""><i class="fa fa-angle-down fa-3x"></i></a>
@@ -27,7 +27,7 @@
 <!--Contact Starts-->
 <div id="contact" class="spacer">
 	<div class="container contactform center">
-		<h2 class="text-center  wowload fadeInUp">Sign up now and wait for your best match!</h2>
+		<h2 class="text-center  wowload fadeInUp">立即登記</h2>
 		<div class="row wowload fadeInLeftBig">      
 			<div class="col-sm-6 col-sm-offset-3 col-xs-12">      
 
@@ -35,14 +35,14 @@
 				<form action="https://docs.google.com/forms/d/1zjikVFl9ZGzG4WroEYloA9KSzvyiZP_l2wk19BdL8LA/formResponse" method="post" target="hidden_iframe" >
 					<!-- <form ng-submit="processForm()"> -->
 
-					<input type="text" placeholder="Name" name="entry.1163971110" ng-model="formData['entry.1163971110']" required>
+					<input type="text" placeholder="名字" name="entry.1163971110" ng-model="formData['entry.1163971110']" required>
 					<select name="entry.2052552941" required>
-						<option value="" disabled selected hidden>Gender</option>
-						<option value="Male">Male</option>
-						<option value="Female">Female</option>
+						<option value="" disabled selected hidden>－姓別－</option>
+						<option value="Male">男</option>
+						<option value="Female">女</option>
 					</select>
 					<select name="entry.1577935524" required>
-						<option value="" disabled selected hidden>Age</option>
+						<option value="" disabled selected hidden>－年齡－</option>
 						<option value="<21">&lt; 21</option>
 						<option value="21-25">21 - 25</option>
 						<option value="26-30">26 - 30</option>
@@ -50,44 +50,47 @@
 						<option value="36-40">36 - 40</option>
 						<option value=">40">&gt; 40</option>
 					</select>
-					<input type="text" placeholder="Office location, e.g. Wan Chai" name="entry.1413818209" required>
-					
-					<input type="text" placeholder="Working industry, e.g. banking, technology..." name="entry.1930472293">
-					<div class="row">
-						<div class="col-sm-3 col-xs-12">
-							<span> Lunch hour :</span>
+					<input type="text" placeholder="工作地點，例如：灣仔" name="entry.1413818209" list="districts" required>
+					<datalist id="districts">
+						<option  data-ng-repeat="district in districts" value="{{district}}">
+						</datalist>
+
+						<input type="text" placeholder="行業，例如：銀行，資訊科技" name="entry.1930472293">
+						<div class="row">
+							<div class="col-sm-3 col-xs-12">
+								<span> 午飯時間：</span>
+							</div>
+							<div class="col-sm-4 col-xs-5">
+								<input type="number" placeholder="00" name="entry.1358837890_hour" class="time hour" value="12" min="0" max="23"> :
+								<input type="number" placeholder="00" name="entry.1358837890_minute" class="time minute" value="00" min="0" max="59" step="15">
+							</div>
+							<div class="col-sm-1 col-xs-2"><span>&nbsp;-&nbsp;</span></div>
+							<div class="col-sm-4 col-xs-5">
+								<input type="number" placeholder="00" name="entry.1383656998_hour" class="time hour" value="13" min="0" max="23"> :
+								<input type="number" placeholder="00" name="entry.1383656998_minute" class="time minute" value="00" min="0" max="59" step="15">
+							</div>
 						</div>
-						<div class="col-sm-4 col-xs-5">
-							<input type="number" placeholder="00" name="entry.1358837890_hour" class="time hour" value="12" min="0" max="23"> :
-							<input type="number" placeholder="00" name="entry.1358837890_minute" class="time minute" value="00" min="0" max="59" step="15">
-						</div>
-						<div class="col-sm-1 col-xs-2"><span>&nbsp;-&nbsp;</span></div>
-						<div class="col-sm-4 col-xs-5">
-							<input type="number" placeholder="00" name="entry.1383656998_hour" class="time hour" value="13" min="0" max="23"> :
-							<input type="number" placeholder="00" name="entry.1383656998_minute" class="time minute" value="00" min="0" max="59" step="15">
-						</div>
-					</div>
-					
-					<select name="entry.1672791290" required>
-						<option value="" disabled selected hidden>Who to look for?</option>
-						<option value="Male">Male</option>
-						<option value="Female">Female</option>
-						<option value="Any">Any</option>
-					</select>
-					<select name="entry.1518902865" required>
-						<option value="" disabled selected hidden>Looking for a relationship?</option>
-						<option value="Yes">Yes</option>
-						<option value="No">No</option>
-						<option value="Don't care">I don't care</option>
-					</select>
-					<input type="text" placeholder="Tell a bit about your job" name="entry.1436334537">
-					<input type="text" placeholder="Topics that interest you, e.g. movies, traveling..." name="entry.610114913">
-					<input type="text" placeholder="Email" name="entry.1686852758" required>
+
+						<select name="entry.1672791290" required>
+							<option value="" disabled selected hidden>想找誰當飯友？</option>
+							<option value="Male">男</option>
+							<option value="Female">女</option>
+							<option value="Any">都可</option>
+						</select>
+						<select name="entry.1518902865" required>
+							<option value="" disabled selected hidden>你是否在找對象？</option>
+							<option value="Yes">是</option>
+							<option value="No">否</option>
+							<option value="Don't care">都可</option>
+						</select>
+						<input type="text" placeholder="簡單介紹一下自己" name="entry.1436334537">
+						<input type="text" placeholder="你感興趣的話題, 例如：電影、旅遊" name="entry.610114913">
+						<input type="text" placeholder="電郵" name="entry.1686852758" required>
 
 
-					<!-- <textarea rows="5" placeholder="Message"></textarea> -->
-					<button class="btn btn-primary" type="submit">Sign up</button>
-				</form>
+						<!-- <textarea rows="5" placeholder="Message"></textarea> -->
+						<button class="btn btn-primary" type="submit">登記</button>
+					</form>
 
 			<!-- <pre>
 				{{ formData }}
@@ -102,38 +105,11 @@
 <!-- works -->
 <div id="foods"  class=" clearfix grid"> 
 	<figure class="effect-oscar  wowload fadeInUp">
-		<img src="images/features/feature1.jpg" alt="img01"/>
+		<img src="images/features/feature6.jpg" alt="img01"/>
 		<figcaption>
-			<h2>Opportunity</h2>
-			<p>Use your daily lunch time to meet a person that may change your life. <br/>Every lunch is an opportinity<br>
-				<!-- <a href="images/portfolio/1.jpg" title="1" data-gallery>View more</a> -->
-			</p>            
-		</figcaption>
-	</figure>
-	<figure class="effect-oscar  wowload fadeInUp">
-		<img src="images/features/feature2.jpg" alt="img01"/>
-		<figcaption>
-			<h2>Autonomous</h2>
-			<p>You decide whether you want to meet a person again or not. <br/>All you need to do is to be well prepared.<br>
-				<!-- <a href="images/portfolio/2.jpg" title="1" data-gallery>View more</a> -->
-			</p>            
-		</figcaption>
-	</figure>
-	<figure class="effect-oscar  wowload fadeInUp">
-		<img src="images/features/feature3.jpg" alt="img01"/>
-		<figcaption>
-			<h2>Precise</h2>
-			<p>Matching with AI. We know you more than you do.<br>
-				<!-- <a href="images/portfolio/3.jpg" title="1" data-gallery>View more</a> -->
-			</p>            
-		</figcaption>
-	</figure>
-	<figure class="effect-oscar  wowload fadeInUp">
-		<img src="images/features/feature4.jpg" alt="img01"/>
-		<figcaption>
-			<h2>Safe</h2>
-			<p>You are in total control on what you want to show others.<br>
-				<!-- <a href="images/portfolio/4.jpg" title="1" data-gallery>View more</a> -->
+			<h2>快捷</h2>
+			<p>每日三分鐘，把你飯友找來。<br/>活用你午飯的時間，認識你身邊的她。<br>
+				<!-- <a href="images/portfolio/6.jpg" title="1" data-gallery>View more</a> -->
 			</p>            
 		</figcaption>
 	</figure>
@@ -141,21 +117,23 @@
 	<figure class="effect-oscar  wowload fadeInUp">
 		<img src="images/features/feature5.jpg" alt="img01"/>
 		<figcaption>
-			<h2>Fast</h2>
-			<p>Ten minutes a day to get your lunchmate. <br/>The only thing needed more is to be punctual<br>
+			<h2>深度配對</h2>
+			<p>拒絕漁翁撒網的交友方式，<br/>我們的配對機制不只流於表面。<br/>你值得更適合你的。<br>
 				<!-- <a href="images/portfolio/5.jpg" title="1" data-gallery>View more</a> -->
 			</p>            
 		</figcaption>
 	</figure>
+
 	<figure class="effect-oscar  wowload fadeInUp">
-		<img src="images/features/feature6.jpg" alt="img01"/>
+		<img src="images/features/feature4.jpg" alt="img01"/>
 		<figcaption>
-			<h2>Easy</h2>
-			<p>Clear UI, you just need few clicks to find your best lunch mate.<br>
-				<!-- <a href="images/portfolio/6.jpg" title="1" data-gallery>View more</a> -->
+			<h2>可靠</h2>
+			<p>每個人的資料都會被飯友核實和鑑定，<br/>確保你在配對過程中認識到真實的他。<br>
+				<!-- <a href="images/portfolio/4.jpg" title="1" data-gallery>View more</a> -->
 			</p>            
 		</figcaption>
 	</figure>
+
 </div>
 <!-- works -->
 
@@ -163,25 +141,25 @@
 
 
 <div id="team" class="container spacer ">
-	<h2 class="text-center  wowload fadeInUp">What does our team says</h2>
+	<h2 class="text-center  wowload fadeInUp">我們的團隊</h2>
 	<div class="clearfix">    
 		<div class="col-sm-6 col-sm-offset-3">
 			<div id="carousel-testimonials" class="carousel slide testimonails  wowload fadeInRight" data-ride="carousel">
 				<div class="carousel-inner">  
 					<div class="item active">
-						<p>We believe technology should help to bring people closer in a way not just physically but spiritually.</p>      
+						<p>我們認為科技應該幫助大家走得更近</p>      
 						<span>Wag - <b>CEO</b></span>
 					</div>
 					<div class="item">
-						<p>I hope my 5 year experiences in the USA as a product manager focusing on dating app could help to bring my hometown friends closer together.</p>
+						<p>我希望我5年在美國擔任產品經理的經驗，可以幫助我家鄉的朋友走得更近</p>
 						<span>Eric - <b>Product Manager</b></span>
 					</div>
 					<div class="item">
-						<p>After spending uncountable days on AI and Machine learning, I believe our technologies will help people to find the 'rightest' person.</p>
+						<p>我相信人我在人工智能和機器學習領域多年的研究可以幫助人們找到“對”的人。</p>
 						<span>Steven - <b>CTO</b></span>
 					</div>
 					<div class="item">
-						<p>Less is more.</p>
+						<p>少即是多。</p>
 						<span>Carol - <b>UX Director</b></span>
 					</div>
 				</div>
