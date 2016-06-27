@@ -23,7 +23,6 @@
 </div>
 
 
-
 <!--Contact Starts-->
 <div id="contact" class="spacer">
 	<div class="container contactform center">
@@ -32,7 +31,7 @@
 			<div class="col-sm-6 col-sm-offset-3 col-xs-12">      
 
 				<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" iframe-onload="iframeLoadedCallback(temp)"></iframe>
-				<form action="https://docs.google.com/forms/d/1zjikVFl9ZGzG4WroEYloA9KSzvyiZP_l2wk19BdL8LA/formResponse" method="post" target="hidden_iframe" >
+				<form action="https://docs.google.com/forms/d/1zjikVFl9ZGzG4WroEYloA9KSzvyiZP_l2wk19BdL8LA/formResponse" method="post" target="hidden_iframe" autocomplete="off">
 					<!-- <form ng-submit="processForm()"> -->
 
 					<input type="text" placeholder="名字" name="entry.1163971110" ng-model="formData['entry.1163971110']" required>
@@ -77,8 +76,8 @@
 
 					<select name="entry.1672791290" required>
 						<option value="" disabled selected hidden>想找誰當飯友？</option>
-						<option value="Male">男</option>
-						<option value="Female">女</option>
+						<option value="Male">男士</option>
+						<option value="Female">女士</option>
 						<option value="Any">都可</option>
 					</select>
 					<select name="entry.1518902865" required>
@@ -88,12 +87,12 @@
 						<option value="Don't care">都可</option>
 					</select>
 					<input type="text" placeholder="簡單介紹一下自己" name="entry.1436334537">
-					<input type="text" placeholder="你感興趣的話題, 例如：電影、旅遊" name="entry.610114913">
+					<input type="text" placeholder="你感興趣的話題" name="entry.610114913">
 					<input type="text" placeholder="電郵" name="entry.1686852758" required>
 
 
 					<!-- <textarea rows="5" placeholder="Message"></textarea> -->
-					<button class="btn btn-primary" type="submit">登記</button>
+					<button class="btn btn-primary" type="submit" analytics-on="click" analytics-event="SignUp">登記</button>
 				</form>
 
 			<!-- <pre>
@@ -150,21 +149,29 @@
 		<div class="col-sm-6 col-sm-offset-3">
 			<div id="carousel-testimonials" class="carousel slide testimonails  wowload fadeInRight" data-ride="carousel">
 				<div class="carousel-inner">  
-					<div class="item active">
-						<p>我們認為科技應該幫助大家走得更近</p>      
-						<span>Wag - <b>CEO</b></span>
+					<div class="item row active">
+						<div class="col-xs-12">
+							<p>“我們認為科技應該幫助大家走得更近。”</p>      
+							<span>Wag - <b>CEO</b></span>
+						</div>
 					</div>
-					<div class="item">
-						<p>我希望我5年在美國擔任產品經理的經驗，可以幫助我家鄉的朋友走得更近</p>
-						<span>Eric - <b>Product Manager</b></span>
+					<div class="item row">
+						<div class="col-xs-12">
+							<p>“我希望我5年在美國擔任產品經理的經驗，可以幫助我家鄉的朋友走得更近。”</p>
+							<span>Eric - <b>Product Manager</b></span>
+						</div>
 					</div>
-					<div class="item">
-						<p>我相信人我在人工智能和機器學習領域多年的研究可以幫助人們找到“對”的人。</p>
-						<span>Steven - <b>CTO</b></span>
+					<div class="item row">
+						<div class="col-xs-12">
+							<p>“我相信人我在人工智能和機器學習領域多年的研究可以幫助人們找到“對”的人。”</p>
+							<span>Steven - <b>CTO</b></span>
+						</div>
 					</div>
-					<div class="item">
-						<p>少即是多。</p>
-						<span>Carol - <b>UX Director</b></span>
+					<div class="item row">
+						<div class="col-xs-12">
+							<p>“少即是多。”</p>
+							<span>Carol - <b>UX Director</b></span>
+						</div>
 					</div>
 				</div>
 

@@ -7,7 +7,7 @@ angular.module('myApp.view1', [
 	])
 
 .config(['$routeProvider', function($routeProvider) {
-	$routeProvider.when('/view1', {
+	$routeProvider.when('/welcome', {
 		templateUrl: 'view1/view1.html',
 		controller: 'View1Ctrl'
 	});
@@ -84,7 +84,7 @@ angular.module('myApp.view1', [
 
 	//iframe onload
 	$scope.iframeLoadedCallback = function(temp){	 	
-		$location.path('/view2');
+		$location.path('/thankyou');
 		$scope.$apply();
 
 	}

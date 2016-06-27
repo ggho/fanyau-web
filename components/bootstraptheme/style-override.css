@@ -42,6 +42,13 @@ body{
     text-align: center;
 }
 
+.btn-primary{
+    background-color: #ff8829;
+}
+.btn-primary:hover{
+    background-color: #803F0B;
+}
+
 a .fa{
     color: #fff;
 }
@@ -49,3 +56,5 @@ a .fa{
 .carousel-indicators .active{
     background-color: #ccc;
 }
+
+
