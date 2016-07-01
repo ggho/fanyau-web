@@ -32,18 +32,23 @@ body{
 #steps h3{
   margin-top: 0;
 }
+.step-icon {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
 .step-label {
   display: inline-block;
   width: 40px;
   height: 40px;
   border-radius: 100%;
-  text-align: center;
   font-size: 1em;
-  vertical-align: middle;
-  /*background-color: #337ab7;*/
+  text-align: center;
+  vertical-align: baseline;
   border: #fec503 solid 2px;
   color: #fec503;
-  margin-right: 5px;
+  position: absolute;
+  left: 20px;
+  top: 0px;
 }
 
 .text-primary{
