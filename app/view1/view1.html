@@ -2,7 +2,7 @@
 <div class="topbar animated fadeInLeftBig"></div>
 
 
-<div id="home">
+<section id="home">
 	<!-- Slider Starts -->
 	<div class="banner">
 		<img src="images/top-banner1.jpg" alt="banner" class="img-responsive">
@@ -14,179 +14,205 @@
 					<p class="animated bounceInLeft">用你每日午飯的時間，遇見有機會改變你一生的飯友</p>
 					<!-- <a href="#contact" class="explore animated bounceInDown"><i class="fa fa-angle-down  fa-3x"></i></a> -->
 
-					<a href="#" scroll-to="contact" class=""><i class="fa fa-angle-down fa-3x"></i></a>
+					<a href="#" scroll-to="steps" class=""><i class="fa fa-angle-down fa-3x"></i></a>
 				</div>
 			</div>
 		</div>
 	</div>
 	<!-- #Slider Ends -->
-</div>
+</section>
+
+<section id="steps">
+	<div class="container spacer-small text-center">
+		<h2 class="text-center wowload fadeInUp">如何運作</h2>
+		<div class="row wowload fadeInLeftBig">
+			<div class="col-sm-3 col-xs-6">
+				<h3><span class="step-label">1</span>起動</h3>
+				<p>填上基本資料，按下'登記'</p>
+			</div>
+			<div class="col-sm-3 col-xs-6">
+				<h3><span class="step-label">2</span>確認配對</h3>
+				<p>查閱配對結果，接受或送出邀請</p>
+			</div>
+			<div class="col-sm-3 col-xs-6">
+				<h3><span class="step-label">3</span>赴約</h3>
+				<p>準時出現，享受一段充實的午飯時間</p>
+			</div>
+			<div class="col-sm-3 col-xs-6">
+				<h3><span class="step-label">4</span>分享</h3>
+				<p>跟我們說一下你的感受，我們會更認識你，並讓你下一次的配對更精彩</p>
+			</div>
+		</div>
+
+		<p class="text-primary text-center spacer-top-small">＊我們的全功能平台將在下季推出。期待的同時，你可以通過下面的表格報名，優先以電郵試用飯友配對服務。</p>
+	</div>
+</section>
 
 
 <!--Contact Starts-->
-<div id="contact" class="spacer">
-	<div class="container contactform center">
-		<h2 class="text-center  wowload fadeInUp">立即登記</h2>
-		<div class="row wowload fadeInLeftBig">      
-			<div class="col-sm-6 col-sm-offset-3 col-xs-12">      
+<section id="contact">
+	<div class="spacer-small">
+		<div class="container contactform center">
+			<h2 class="text-center  wowload fadeInUp">立即登記</h2>
+			<div class="row wowload fadeInLeftBig">      
+				<div class="col-sm-6 col-sm-offset-3 col-xs-12">      
 
-				<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" iframe-onload="iframeLoadedCallback(temp)"></iframe>
-				<form action="https://docs.google.com/forms/d/1zjikVFl9ZGzG4WroEYloA9KSzvyiZP_l2wk19BdL8LA/formResponse" method="post" target="hidden_iframe" autocomplete="off">
-					<!-- <form ng-submit="processForm()"> -->
+					<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" iframe-onload="iframeLoadedCallback(temp)"></iframe>
+					<form action="https://docs.google.com/forms/d/1zjikVFl9ZGzG4WroEYloA9KSzvyiZP_l2wk19BdL8LA/formResponse" method="post" target="hidden_iframe" autocomplete="off">
+						<!-- <form ng-submit="processForm()"> -->
 
-					<input type="text" placeholder="名字" name="entry.1163971110" ng-model="formData['entry.1163971110']" required>
-					<select name="entry.2052552941" required>
-						<option value="" disabled selected hidden>－姓別－</option>
-						<option value="Male">男</option>
-						<option value="Female">女</option>
-					</select>
-					<select name="entry.1577935524" required>
-						<option value="" disabled selected hidden>－年齡－</option>
-						<option value="<21">&lt; 21</option>
-						<option value="21-25">21 - 25</option>
-						<option value="26-30">26 - 30</option>
-						<option value="31-35">31 - 35</option>
-						<option value="36-40">36 - 40</option>
-						<option value=">40">&gt; 40</option>
-					</select>
-					<input type="text" placeholder="工作地點，例如：灣仔" name="entry.1413818209" list="districts" required>
-					<datalist id="districts">
-						<option  data-ng-repeat="district in districts" value="{{district}}"/>
-					</datalist>
+						<input type="text" placeholder="名字" name="entry.1163971110" ng-model="formData['entry.1163971110']" required>
+						<select name="entry.2052552941" required>
+							<option value="" disabled selected hidden>－姓別－</option>
+							<option value="Male">男</option>
+							<option value="Female">女</option>
+						</select>
+						<select name="entry.1577935524" required>
+							<option value="" disabled selected hidden>－年齡－</option>
+							<option value="<21">&lt; 21</option>
+							<option value="21-25">21 - 25</option>
+							<option value="26-30">26 - 30</option>
+							<option value="31-35">31 - 35</option>
+							<option value="36-40">36 - 40</option>
+							<option value=">40">&gt; 40</option>
+						</select>
+						<input type="text" placeholder="工作地點，例如：灣仔" name="entry.1413818209" list="districts" required>
+						<datalist id="districts">
+							<option  data-ng-repeat="district in districts" value="{{district}}"/>
+						</datalist>
 
-					<input type="text" placeholder="行業，例如：銀行，資訊科技" list="industries" name="entry.1930472293">
-					<datalist id="industries">
-						<option  data-ng-repeat="industry in industries" value="{{industry}}"/>
-					</datalist>
+						<input type="text" placeholder="行業，例如：銀行，資訊科技" list="industries" name="entry.1930472293">
+						<datalist id="industries">
+							<option  data-ng-repeat="industry in industries" value="{{industry}}"/>
+						</datalist>
 
-					<div class="row">
-						<div class="col-sm-3 col-xs-12">
-							<span> 午飯時間：</span>
+						<div class="row">
+							<div class="col-sm-3 col-xs-12">
+								<span> 午飯時間：</span>
+							</div>
+							<div class="col-sm-4 col-xs-5">
+								<input type="number" placeholder="00" name="entry.1358837890_hour" class="time hour" value="12" min="0" max="23"> :
+								<input type="number" placeholder="00" name="entry.1358837890_minute" class="time minute" value="00" min="0" max="59" step="15">
+							</div>
+							<div class="col-sm-1 col-xs-2"><span>&nbsp;-&nbsp;</span></div>
+							<div class="col-sm-4 col-xs-5">
+								<input type="number" placeholder="00" name="entry.1383656998_hour" class="time hour" value="13" min="0" max="23"> :
+								<input type="number" placeholder="00" name="entry.1383656998_minute" class="time minute" value="00" min="0" max="59" step="15">
+							</div>
 						</div>
-						<div class="col-sm-4 col-xs-5">
-							<input type="number" placeholder="00" name="entry.1358837890_hour" class="time hour" value="12" min="0" max="23"> :
-							<input type="number" placeholder="00" name="entry.1358837890_minute" class="time minute" value="00" min="0" max="59" step="15">
-						</div>
-						<div class="col-sm-1 col-xs-2"><span>&nbsp;-&nbsp;</span></div>
-						<div class="col-sm-4 col-xs-5">
-							<input type="number" placeholder="00" name="entry.1383656998_hour" class="time hour" value="13" min="0" max="23"> :
-							<input type="number" placeholder="00" name="entry.1383656998_minute" class="time minute" value="00" min="0" max="59" step="15">
-						</div>
-					</div>
 
-					<select name="entry.1672791290" required>
-						<option value="" disabled selected hidden>想找誰當飯友？</option>
-						<option value="Male">男士</option>
-						<option value="Female">女士</option>
-						<option value="Any">都可</option>
-					</select>
-					<select name="entry.1518902865" required>
-						<option value="" disabled selected hidden>你是否在找對象？</option>
-						<option value="Yes">是</option>
-						<option value="No">否</option>
-						<option value="Don't care">都可</option>
-					</select>
-					<input type="text" placeholder="簡單介紹一下自己" name="entry.1436334537">
-					<input type="text" placeholder="你感興趣的話題" name="entry.610114913">
-					<input type="text" placeholder="電郵" name="entry.1686852758" required>
+						<select name="entry.1672791290" required>
+							<option value="" disabled selected hidden>想找誰當飯友？</option>
+							<option value="Male">男士</option>
+							<option value="Female">女士</option>
+							<option value="Any">都可</option>
+						</select>
+						<select name="entry.1518902865" required>
+							<option value="" disabled selected hidden>你是否在找對象？</option>
+							<option value="Yes">是</option>
+							<option value="No">否</option>
+							<option value="Don't care">都可</option>
+						</select>
+						<input type="text" placeholder="簡單介紹一下自己" name="entry.1436334537">
+						<input type="text" placeholder="你感興趣的話題" name="entry.610114913">
+						<input type="text" placeholder="電郵" name="entry.1686852758" required>
 
 
-					<!-- <textarea rows="5" placeholder="Message"></textarea> -->
-					<button class="btn btn-primary" type="submit" analytics-on="click" analytics-event="SignUp">登記</button>
-				</form>
-
-			<!-- <pre>
-				{{ formData }}
-			</pre> -->
-
-		</div>
-	</div>
-</div>
-</div>
-
-
-<!-- works -->
-<div id="foods"  class=" clearfix grid"> 
-	<figure class="effect-oscar  wowload fadeInUp">
-		<img src="images/features/feature6.jpg" alt="img01"/>
-		<figcaption>
-			<h2>快捷</h2>
-			<p>每日三分鐘，把你飯友找來。<br/>活用你午飯的時間，認識你身邊的她。<br>
-				<!-- <a href="images/portfolio/6.jpg" title="1" data-gallery>View more</a> -->
-			</p>            
-		</figcaption>
-	</figure>
-
-	<figure class="effect-oscar  wowload fadeInUp">
-		<img src="images/features/feature5.jpg" alt="img01"/>
-		<figcaption>
-			<h2>深度配對</h2>
-			<p>拒絕漁翁撒網的交友方式，<br/>我們的配對機制不只流於表面。<br/>你值得更適合你的。<br>
-				<!-- <a href="images/portfolio/5.jpg" title="1" data-gallery>View more</a> -->
-			</p>            
-		</figcaption>
-	</figure>
-
-	<figure class="effect-oscar  wowload fadeInUp">
-		<img src="images/features/feature4.jpg" alt="img01"/>
-		<figcaption>
-			<h2>可靠</h2>
-			<p>每個人的資料都會被飯友核實和鑑定，<br/>確保你在配對過程中認識到真實的他。<br>
-				<!-- <a href="images/portfolio/4.jpg" title="1" data-gallery>View more</a> -->
-			</p>            
-		</figcaption>
-	</figure>
-
-</div>
-<!-- works -->
-
-
-
-
-<div id="team" class="container spacer ">
-	<h2 class="text-center  wowload fadeInUp">我們的團隊</h2>
-	<div class="clearfix">    
-		<div class="col-sm-6 col-sm-offset-3">
-			<div id="carousel-testimonials" class="carousel slide testimonails  wowload fadeInRight" data-ride="carousel">
-				<div class="carousel-inner">  
-					<div class="item row active">
-						<div class="col-xs-12">
-							<p>“我們認為科技應該幫助大家走得更近。”</p>      
-							<span>Wag - <b>CEO</b></span>
-						</div>
-					</div>
-					<div class="item row">
-						<div class="col-xs-12">
-							<p>“我希望我5年在美國擔任產品經理的經驗，可以幫助我家鄉的朋友走得更近。”</p>
-							<span>Eric - <b>Product Manager</b></span>
-						</div>
-					</div>
-					<div class="item row">
-						<div class="col-xs-12">
-							<p>“我相信人我在人工智能和機器學習領域多年的研究可以幫助人們找到“對”的人。”</p>
-							<span>Steven - <b>CTO</b></span>
-						</div>
-					</div>
-					<div class="item row">
-						<div class="col-xs-12">
-							<p>“少即是多。”</p>
-							<span>Carol - <b>UX Director</b></span>
-						</div>
-					</div>
+						<!-- <textarea rows="5" placeholder="Message"></textarea> -->
+						<button class="btn btn-primary" type="submit" analytics-on="click" analytics-event="SignUp">登記</button>
+					</form>
 				</div>
-
-				<!-- Indicators -->
-				<ol class="carousel-indicators">
-					<li data-target="#carousel-testimonials" data-slide-to="0" class="active"></li>
-					<li data-target="#carousel-testimonials" data-slide-to="1"></li>
-					<li data-target="#carousel-testimonials" data-slide-to="2"></li>
-					<li data-target="#carousel-testimonials" data-slide-to="3"></li>
-				</ol>
-				<!-- Indicators -->
 			</div>
 		</div>
 	</div>
-</div>
+</section>
+
+<!-- works -->
+<section id="foods">
+	<div class=" clearfix grid"> 
+
+		<figure class="effect-oscar  wowload fadeInUp">
+			<img src="images/features/feature6.jpg" alt="img01"/>
+			<figcaption>
+				<h2>快捷</h2>
+				<p>每日三分鐘，把你飯友找來。<br/>活用你午飯的時間，認識你身邊的她。<br>
+					<!-- <a href="images/portfolio/6.jpg" title="1" data-gallery>View more</a> -->
+				</p>            
+			</figcaption>
+		</figure>
+
+		<figure class="effect-oscar  wowload fadeInUp">
+			<img src="images/features/feature5.jpg" alt="img01"/>
+			<figcaption>
+				<h2>深度配對</h2>
+				<p>拒絕漁翁撒網的交友方式，<br/>我們的配對機制不只流於表面。<br/>你值得更適合你的。<br>
+					<!-- <a href="images/portfolio/5.jpg" title="1" data-gallery>View more</a> -->
+				</p>            
+			</figcaption>
+		</figure>
+
+		<figure class="effect-oscar  wowload fadeInUp">
+			<img src="images/features/feature4.jpg" alt="img01"/>
+			<figcaption>
+				<h2>可靠</h2>
+				<p>每個人的資料都會被飯友核實和鑑定，<br/>確保你在配對過程中認識到真實的他。<br>
+					<!-- <a href="images/portfolio/4.jpg" title="1" data-gallery>View more</a> -->
+				</p>            
+			</figcaption>
+		</figure>
+
+	</div>
+</section>
+<!-- works -->
+
+
+
+<section id="team" >
+	<div class="container spacer ">
+		<h2 class="text-center  wowload fadeInUp">我們的團隊</h2>
+		<div class="clearfix">    
+			<div class="col-sm-6 col-sm-offset-3">
+				<div id="carousel-testimonials" class="carousel slide testimonails  wowload fadeInRight" data-ride="carousel">
+					<div class="carousel-inner">  
+						<div class="item row active">
+							<div class="col-xs-12">
+								<p>“我們認為科技應該幫助大家走得更近。”</p>      
+								<span>Wag - <b>CEO</b></span>
+							</div>
+						</div>
+						<div class="item row">
+							<div class="col-xs-12">
+								<p>“我希望我5年在美國擔任產品經理的經驗，可以幫助我家鄉的朋友走得更近。”</p>
+								<span>Eric - <b>Product Manager</b></span>
+							</div>
+						</div>
+						<div class="item row">
+							<div class="col-xs-12">
+								<p>“我相信人我在人工智能和機器學習領域多年的研究可以幫助人們找到“對”的人。”</p>
+								<span>Steven - <b>CTO</b></span>
+							</div>
+						</div>
+						<div class="item row">
+							<div class="col-xs-12">
+								<p>“少即是多。”</p>
+								<span>Carol - <b>UX Director</b></span>
+							</div>
+						</div>
+					</div>
+
+					<!-- Indicators -->
+					<ol class="carousel-indicators">
+						<li data-target="#carousel-testimonials" data-slide-to="0" class="active"></li>
+						<li data-target="#carousel-testimonials" data-slide-to="1"></li>
+						<li data-target="#carousel-testimonials" data-slide-to="2"></li>
+						<li data-target="#carousel-testimonials" data-slide-to="3"></li>
+					</ol>
+					<!-- Indicators -->
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 
 <!-- # Footer Ends -->
 <a href="#" scroll-to="home" class="gototop "><i class="fa fa-angle-up fa-3x"></i></a>

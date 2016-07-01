@@ -1,29 +1,98 @@
 /* app css stylesheet */
 
 @font-face {
-    font-family: DroidSansFallback;
-    src: url(fonts/DroidSansFallback.ttf);
+  font-family: DroidSansFallback;
+  src: url(fonts/DroidSansFallback.ttf);
 }
 
-
+/*** General ***/
 body{
-      font-family: DroidSansFallback, Roboto,Arial,Helvetica;
+  background: none;
+  font-family: DroidSansFallback, Roboto,Arial,Helvetica;
+}
+.spacer-small{
+  padding: 3em 0;
 }
 
+.spacer-top-small{
+  padding: 3em 0 0 0;
+}
+
+/*** Banner ***/
+#home {
+  padding-top: 0; 
+}
+.banner .caption-info h1 {
+  font-size: 4em;
+  font-family: inherit;
+  line-height: 2em;
+}
+
+/*** Steps ***/
+#steps h3{
+  margin-top: 0;
+}
+.step-label {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 1em;
+  vertical-align: middle;
+  /*background-color: #337ab7;*/
+  border: #fec503 solid 2px;
+  color: #fec503;
+  margin-right: 5px;
+}
+
+.text-primary{
+  color: #fec503;
+
+}
+
+/*** Form ***/
+#contact{
+  background-color: #fafafa;
+}
+.contactform span{
+  line-height: 50px;
+}
+.contactform select {
+  width: 100%;
+  padding: 1em;
+  border: 1px solid #ccc;
+  margin-bottom: 1em;
+  border-radius: 0;
+  text-indent: 0.5em;
+  height: 3em;
+  background-color: white;
+
+  border-style: none;
+  outline: 1px solid #ccc; 
+
+}
+.contactform select:invalid {
+  color: #666;
+}
+.contactform input.time{
+  width: 46%;
+  text-align: center;
+}
 /*Overiding placeholder colors*/
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-    color:    #666;
+  color:    #666;
 }
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-   color:    #666;
-   opacity:  1;
+ color:    #666;
+ opacity:  1;
 }
 ::-moz-placeholder { /* Mozilla Firefox 19+ */
-   color:    #666;
-   opacity:  1;
+ color:    #666;
+ opacity:  1;
 }
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-   color:    #666;
+ color:    #666;
 }
 
 .menu {
@@ -56,12 +125,39 @@ body{
 }
 
 
+/*** Buttons ***/
+.btn-primary{
+  /*background-color: #ff8829; /*orange*/
+  background-color: #fed136; /*yellow*/
+  /*background-color: #e25f70; /*coral red*/
+  /*background-color: #EF6775; /*coral red 2*/
+  /*background-color: #FD444D; /*airbnb coral*/
+}
+.btn-primary:hover{
+  /*background-color: #803F0B;*/
+  background-color: #fec503; /*yellow*/
+}
+a .fa{
+  color: #fff;
+}
+
+/*** People ***/
+.carousel-indicators .active{
+  background-color: #ccc;
+}
 .carousel-inner > .item {
   -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
   -o-transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
   transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);         
 }
-
 #carousel-testimonials{
   text-align: center;
 }
+
+/*** Footer ***/
+.footer{
+  /*background-color: #fed136;  /*yellow*/
+  /*background-color: #e25f70;*/
+}
+
+
