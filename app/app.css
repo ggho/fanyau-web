@@ -11,11 +11,15 @@ body{
   font-family: DroidSansFallback, Roboto,Arial,Helvetica;
 }
 .spacer-small{
-  padding: 3em 0;
+  padding-top: 3em;
+  padding-bottom: 3em;
 }
 
 .spacer-top-small{
   padding: 3em 0 0 0;
+}
+.wrapper{
+  padding: 3em 2em; 
 }
 
 /*** Banner ***/
@@ -81,7 +85,7 @@ body{
   color: #666;
 }
 .contactform input.time{
-  width: 46%;
+  width: 44%;
   text-align: center;
 }
 /*Overiding placeholder colors*/
@@ -130,6 +134,18 @@ body{
 }
 
 
+/*** Features ***/
+.flex-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-item{
+  flex-basis: 100%;
+  flex-grow:1;
+}
+
+
 /*** Buttons ***/
 .btn-primary{
   /*background-color: #ff8829; /*orange*/
@@ -165,4 +181,22 @@ a .fa{
   /*background-color: #e25f70;*/
 }
 
+/*media size dependent*/
+@media (min-width: 768px){
+  .flex-item{
+    flex-basis: 50%;
+  }
+  .right-img{
+    order: 2;
+  }
+}
+
+@media (max-width: 767px){
+  .banner .caption-info h1 {
+    font-size: 1.8em;
+  }
+  .banner .caption-info p {
+    font-size: 1em;
+  }
+}
 
