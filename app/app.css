@@ -154,7 +154,8 @@ body{
   /*background-color: #EF6775; /*coral red 2*/
   /*background-color: #FD444D; /*airbnb coral*/
 }
-.btn-primary:hover{
+
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus {
   /*background-color: #803F0B;*/
   background-color: #fec503; /*yellow*/
 }
