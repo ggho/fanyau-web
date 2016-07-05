@@ -1,67 +1,152 @@
 /* app css stylesheet */
 
 @font-face {
-    font-family: DroidSansFallback;
-    src: url(fonts/DroidSansFallback.ttf);
+  font-family: DroidSansFallback;
+  src: url(fonts/DroidSansFallback.ttf);
+}
+
+/*** General ***/
+.wrapper{
+  padding: 3em 2em; 
 }
 
 
-body{
-      font-family: DroidSansFallback, Roboto,Arial,Helvetica;
+
+/*** Steps ***/
+#steps h3{
+  margin-top: 0;
+}
+.step-icon {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+.step-label {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  font-size: 1em;
+  text-align: center;
+  vertical-align: baseline;
+  border: #fec503 solid 2px;
+  color: #fec503;
+  position: absolute;
+  left: 20px;
+  top: 0px;
+}
+
+.text-primary{
+  color: #fec503;
+
+}
+
+/*** Form ***/
+#contact{
+  background-color: #fafafa;
+}
+.contactform span{
+  line-height: 50px;
+}
+.contactform select {
+  width: 100%;
+  padding: 1em;
+  border: 1px solid #ccc;
+  margin-bottom: 1em;
+  border-radius: 0;
+  text-indent: 0.5em;
+  height: 3em;
+  background-color: white;
+
+  border-style: none;
+  outline: 1px solid #ccc; 
+
+}
+.contactform select:invalid {
+  color: #666;
+}
+.contactform input.time{
+  width: 44%;
+  text-align: center;
 }
 
 /*Overiding placeholder colors*/
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-    color:    #666;
+  color:    #666;
 }
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-   color:    #666;
-   opacity:  1;
+ color:    #666;
+ opacity:  1;
 }
 ::-moz-placeholder { /* Mozilla Firefox 19+ */
-   color:    #666;
-   opacity:  1;
+ color:    #666;
+ opacity:  1;
 }
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-   color:    #666;
-}
-
-.menu {
-  list-style: none;
-  border-bottom: 0.1em solid black;
-  margin-bottom: 2em;
-  padding: 0 0 0.5em;
-}
-
-.menu:before {
-  content: "[";
-}
-
-.menu:after {
-  content: "]";
-}
-
-.menu > li {
-  display: inline;
-}
-
-.menu > li:before {
-  content: "|";
-  padding-right: 0.3em;
-}
-
-.menu > li:nth-child(1):before {
-  content: "";
-  padding: 0;
+ color:    #666;
 }
 
 
+/*** Features ***/
+.flex-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-item{
+  flex-basis: 100%;
+  flex-grow:1;
+}
+
+
+/*** Buttons ***/
+.btn-primary{
+  /*background-color: #ff8829; /*orange*/
+  background-color: #fed136; /*yellow*/
+  /*background-color: #e25f70; /*coral red*/
+  /*background-color: #EF6775; /*coral red 2*/
+  /*background-color: #FD444D; /*airbnb coral*/
+}
+
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+  /*background-color: #803F0B;*/
+  background-color: #fec503; /*yellow*/
+}
+a .fa{
+  color: #fff;
+}
+
+/*** People ***/
 .carousel-inner > .item {
   -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
   -o-transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
   transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);         
 }
-
 #carousel-testimonials{
   text-align: center;
 }
+
+/*** Footer ***/
+.footer{
+  /*background-color: #fed136;  /*yellow*/
+  /*background-color: #e25f70;*/
+}
+
+/*media size dependent*/
+@media (min-width: 768px){
+  .flex-item{
+    flex-basis: 50%;
+  }
+  .right-img{
+    order: 2;
+  }
+}
+
+@media (max-width: 767px){
+  .banner .caption-info h1 {
+    font-size: 1.8em;
+  }
+  .banner .caption-info p {
+    font-size: 1em;
+  }
+}
+

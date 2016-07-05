@@ -21,6 +21,6 @@
     "commit": "a5786e6fccf9c322b3afd3b6b65f13af3d67aaf5"
   },
   "_source": "https://github.com/angulartics/angulartics-google-analytics.git",
-  "_target": "^0.2.0",
+  "_target": "~0.2.0",
   "_originalSource": "angulartics-google-analytics"
 }

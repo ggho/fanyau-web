@@ -2,20 +2,28 @@
 <!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js" xmlns:fb="http://ogp.me/ns/fb#"> <!--<![endif]-->
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>飯友</title>
-  <meta name="description" content="">
+  <meta name="description" content="一頓午飯，一次機遇，一種連繫。同樣的一個工作天，同一個午飯時間，認識一個在附近的新飯友。">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <meta property="og:url" content="http://www.fanyau.com" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="飯友" />
+  <meta property="og:site_name" content="FanYau" />
+  <meta property="og:description" content="一頓午飯，一次機遇，一種連繫。\n同樣的一個工作天，同一個午飯時間，認識一個在附近的新飯友。" />
+  <meta property="og:image" content="http://www.fanyau.com/images/logo_256px.png" />
+
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
 
   <!-- Google fonts -->
-  <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:600' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:600' rel='stylesheet' type='text/css'>
 
   <!-- font awesome -->
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
@@ -35,11 +43,7 @@
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
 
-  <link rel="stylesheet" href="components/bootstraptheme/style.css">
-  <link rel="stylesheet" href="components/bootstraptheme/style-override.css">
-
-
-
+  <link rel="stylesheet" href="components/bootstraptheme/style2.css">
   <link rel="stylesheet" href="app.css">
 
 
@@ -48,11 +52,6 @@
 
 </head>
 <body>
-  <!-- <ul class="menu">
-    <li><a href="#!/view1">view1</a></li>
-    <li><a href="#!/view2">view2</a></li>
-  </ul> -->
-
   <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
       <![endif]-->
@@ -62,7 +61,11 @@
 
       <!-- Footer Starts -->
       <div class="footer text-center spacer">
-        <!-- <p class="wowload flipInX"><a href="#"><i class="fa fa-facebook fa-2x"></i></a> <a href="#"><i class="fa fa-instagram fa-2x"></i></a> <a href="#"><i class="fa fa-twitter fa-2x"></i></a> <a href="#"><i class="fa fa-flickr fa-2x"></i></a> </p> -->
+        <p class="wowload flipInX">
+          <a href="http://www.facebook.com/" target="_blank"><i class="fa fa-facebook fa-2x"></i></a> 
+          <a href="mailto:findyoursapp@gmail.com"><i class="fa fa-envelope fa-2x"></i></a> 
+        </p>
+
         Copyright 2016 FanYau. All rights reserved.
       </div>
       
@@ -102,7 +105,7 @@
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-70105175-4', { 'cookieDomain': 'none' });
+  ga('create', 'UA-80023714-1', { 'cookieDomain': 'none' });
   // ga('send', 'pageview');
 
 </script>
