@@ -49,20 +49,39 @@
 .contactform span{
   line-height: 50px;
 }
-.contactform select {
+
+select {
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+}
+select::-ms-expand { /* for IE 11 */
+    display: none;
+}
+select {
   width: 100%;
   padding: 1em;
+  line-height: 18px;
+  /*height: 45px;*/
   border: 1px solid #ccc;
   margin-bottom: 1em;
   border-radius: 0;
-  text-indent: 0.5em;
-  height: 3em;
+  /*text-indent: 0.5em;*/
   background-color: white;
-
   border-style: none;
   outline: 1px solid #ccc; 
-
 }
+.sel{
+  position: relative;
+}
+.sel:after {
+  position: absolute;
+  font-family: 'FontAwesome';
+  top: 1em;
+  right: 1em;
+  content: "\f0d7";
+}
+
 .contactform select:invalid {
   color: #666;
 }
