@@ -6,31 +6,13 @@
 }
 
 /*** General ***/
-body{
-  background: none;
-  font-family: DroidSansFallback, Roboto,Arial,Helvetica;
-}
-.spacer-small{
-  padding-top: 3em;
-  padding-bottom: 3em;
-}
-
-.spacer-top-small{
-  padding: 3em 0 0 0;
-}
 .wrapper{
   padding: 3em 2em; 
 }
 
-/*** Banner ***/
-#home {
-  padding-top: 0; 
-}
-.banner .caption-info h1 {
-  font-size: 4em;
-  font-family: inherit;
-  line-height: 2em;
-}
+
+/*** Steps ***/
+.banner .logo{width: 20%;}
 
 /*** Steps ***/
 #steps h3{
@@ -88,6 +70,7 @@ body{
   width: 44%;
   text-align: center;
 }
+
 /*Overiding placeholder colors*/
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
   color:    #666;
@@ -102,35 +85,6 @@ body{
 }
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
  color:    #666;
-}
-
-.menu {
-  list-style: none;
-  border-bottom: 0.1em solid black;
-  margin-bottom: 2em;
-  padding: 0 0 0.5em;
-}
-
-.menu:before {
-  content: "[";
-}
-
-.menu:after {
-  content: "]";
-}
-
-.menu > li {
-  display: inline;
-}
-
-.menu > li:before {
-  content: "|";
-  padding-right: 0.3em;
-}
-
-.menu > li:nth-child(1):before {
-  content: "";
-  padding: 0;
 }
 
 
@@ -164,9 +118,6 @@ a .fa{
 }
 
 /*** People ***/
-.carousel-indicators .active{
-  background-color: #ccc;
-}
 .carousel-inner > .item {
   -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
   -o-transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
