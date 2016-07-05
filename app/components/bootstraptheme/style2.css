@@ -1,4 +1,4 @@
-body {	color:#333;	font:300 15px/15px DroidSansFallback, Roboto,Arial,Helvetica; -webkit-font-smoothing:antialiased;}
+body {	color:#333;	font:300 15px/15px Roboto,Helvetica,Arial; -webkit-font-smoothing:antialiased;}
 
 a{color:#00a9c6; text-decoration:none;}
 a:hover{color:#666;}
@@ -12,9 +12,9 @@ a:hover{color:#666;}
 }
 
 h1,h2,h3,h4{margin: 0;line-height: 1em;}
-h2{font-size: 2.5em; font-family: Arial; margin-bottom: 1.5em;}
-h3{font-size: 2em; font-family: Arial; margin:2em 0 1em 0;}
-h4{font-size: 1.5em; font-family: Arial;margin-bottom: 1em;}
+h2{font-size: 2.5em;  margin-bottom: 1.5em;}
+h3{font-size: 2em;  margin:2em 0 1em 0;}
+h4{font-size: 1.5em; margin-bottom: 1em;}
 h4 i{margin-right: 0.5em;}
 
 p{font-size:1em;line-height: 1.7em; margin-bottom: 1.7em;}
@@ -45,13 +45,12 @@ p{font-size:1em;line-height: 1.7em; margin-bottom: 1.7em;}
 .banner .caption-wrapper{display: table;height: 100%;width: 100%;}
 .banner .caption-info{display: table-cell;vertical-align: middle;text-align: center;color: #fff;}
 .banner .caption-info h1{
-	font-weight:normal;
-	font-size: 4em;
+	font: normal 4em DroidSansFallback,Helvetica,Arial; 
 	text-transform:capitalize;
 	line-height: 2em;
 }
 
-.banner .caption-info p{font:600 1.7em "Josefin Sans",Arial,Helvetica;}
+.banner .caption-info p{font:600 1.7em "Josefin Sans",Helvetica,Arial;}
 .banner a.explore{color: #fff;}
 
 /*about*/
