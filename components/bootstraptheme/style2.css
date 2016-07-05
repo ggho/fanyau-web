@@ -51,7 +51,7 @@ p{font-size:1em;line-height: 1.7em; margin-bottom: 1.7em;}
 	line-height: 2em;
 }
 
-.banner .caption-info p{font:600 1.7em Josefin Sans,Arial,Helvetica;}
+.banner .caption-info p{font:600 1.7em "Josefin Sans",Arial,Helvetica;}
 .banner a.explore{color: #fff;}
 
 /*about*/
@@ -117,7 +117,7 @@ p{font-size:1em;line-height: 1.7em; margin-bottom: 1.7em;}
 
 
 @media (max-width: 1200px) {
-	body{font:300 13px/13px Roboto,Arial,Helvetica;}
+	body{font:300 13px/13px DroidSansFallback,Roboto,Arial,Helvetica;}
 	.navbar-brand{padding-top: 11px;}
 	.services ul li{margin:0 0.5em; }
 	
@@ -129,8 +129,8 @@ p{font-size:1em;line-height: 1.7em; margin-bottom: 1.7em;}
 }
 
 @media (max-width: 900px) {
-	h1{font: 700 3.5em Roboto,Arial,Helvetica;}
-	h4 {font: 300 1.3em Roboto,Arial,Helvetica;}
+	h1{font: 700 3.5em DroidSansFallback.Roboto,Arial,Helvetica;}
+	h4 {font: 300 1.3em DroidSansFallback,Roboto,Arial,Helvetica;}
 	.btn{padding: 1em 2em;}
 	.partners img{margin: 0 15px 25px 0;width: 157px;}
 	.services ul li{width: 9em;height: 9em;}
@@ -142,7 +142,7 @@ p{font-size:1em;line-height: 1.7em; margin-bottom: 1.7em;}
 
 
 @media (max-width: 767px) {
-	body{font:300 12px/12px Roboto,Arial,Helvetica;}
+	body{font:300 12px/12px DroidSansFallback,Roboto,Arial,Helvetica;}
 	.navbar-nav > li > a {line-height: 1em;}	
 	.navbar-brand{padding: 7px;}
 	.navbar-brand img{height: 37px;}
@@ -150,7 +150,9 @@ p{font-size:1em;line-height: 1.7em; margin-bottom: 1.7em;}
 
 	.carousel-caption,.carousel-control,.carousel-indicators{display: none;}
 
-	h2.text-center{text-align: left;font-size: 1.7em;}
+	h2{font-size: 1.7em;}
+	h2.text-center{text-align: left;}
+	h3{font-size: 1.5em;}
 	h4 {font: 300 1.2em Roboto,Arial,Helvetica;}
 	#partners h2{padding: 0 1em;} 
 	#home {padding-top: 5em;}
