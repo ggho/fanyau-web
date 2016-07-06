@@ -48,7 +48,7 @@
 }
 
 /*** Form ***/
-#contact{
+#signup{
   background-color: #fafafa;
 }
 .contactform span{
@@ -166,7 +166,7 @@ a .fa{
     order: 2;
   }
   .wrapper{
-  padding: 3em 2em; 
+  padding: 2.5em 2em; 
 }
 }
 
