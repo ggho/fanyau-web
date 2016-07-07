@@ -108,7 +108,15 @@ p{font-size:1em;line-height: 1.7em; margin-bottom: 1.7em;}
 
 
 /*signup*/
-.contactform textarea,.contactform input{width: 100%;padding:1em;border:1px solid #ccc;margin-bottom: 1em;border-radius: 0;outline: none;}
+.contactform textarea,.contactform input{
+	width: 100%;
+	padding:1em;
+	border:1px solid #ccc;
+	margin-bottom: 1em;
+	border-radius: 0;
+	outline: none;
+	line-height: normal;
+}
 /*contact*/
 
 #map{width: 100%; height: 500px;}
@@ -134,7 +142,7 @@ p{font-size:1em;line-height: 1.7em; margin-bottom: 1.7em;}
 }
 
 @media (max-width: 900px) {
-	h1{font: 700 3.5em DroidSansFallback.Roboto,Arial,Helvetica;}
+	h1{font: 700 3.5em DroidSansFallback,Roboto,Arial,Helvetica;}
 	h4 {font: 300 1.3em DroidSansFallback,Roboto,Arial,Helvetica;}
 	.btn{padding: 1em 2em;}
 	.partners img{margin: 0 15px 25px 0;width: 157px;}

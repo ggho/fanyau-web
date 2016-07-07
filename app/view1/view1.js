@@ -90,14 +90,12 @@ angular.module('myApp.view1', [
 	}
 
 
-
-
-		// if($location.hash() == 'contact'){
-		// 	//scroll to portfo
-		// 	var element = document.getElementById('contact');
-		// 	smoothScroll(element);
-
-		// }
+	//scrolling effect to signup form
+	if($location.hash() == 'signup'){
+		//scroll to portfo
+		var element = document.getElementById('signup');
+		smoothScroll(element);
+	}
 
 	// $scope.processForm();
 
