@@ -4,18 +4,21 @@
 
 <section id="home">
 	<!-- Slider Starts -->
-	<div class="banner">
-		<img src="images/top-banner.jpg" alt="banner" class="img-responsive">
+	<div class="banner background-image">
+		
+		<!-- <img src="images/top-banner.jpg" alt="banner" class="img-responsive background-image"> -->
+		
 		<div class="caption">
 			<div class="caption-wrapper">
 				<div class="caption-info">              
 					<!-- <i class="fa fa-coffee fa-5x animated bounceInDown"></i> -->
-					<img src="images/logo_256px.png" alt="logo" class="logo">
+					<img src="images/logo_256px.png" alt="logo" class="logo spacer-top">
 					<h1 class="animated bounceInUp">一頓午飯，一次機遇，一種連繫</h1>
 					<p class="animated bounceInLeft">同樣的一個工作天，同一個午飯時間，認識一個在附近的新飯友</p>
-					<!-- <a href="#contact" class="explore animated bounceInDown"><i class="fa fa-angle-down  fa-3x"></i></a> -->
-
-					<a href="#" scroll-to="steps" class=""><i class="fa fa-angle-down fa-3x"></i></a>
+					<!-- <a href="#signup" class="explore animated bounceInDown"><i class="fa fa-angle-down  fa-3x"></i></a> -->
+					<div class="spacer-bottom">
+						<a href="#" scroll-to="steps" ><i class="fa fa-angle-down fa-3x"></i></a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -54,15 +57,15 @@
 </section>
 
 
-<!--Contact Starts-->
-<section id="contact">
+<!--Form Starts-->
+<section id="signup">
 	<div class="spacer">
 		<div class="container contactform center">
 			<h2 class="text-center  wowload fadeInUp">立即登記</h2>
 			<div class="row wowload fadeInLeftBig">      
 				<div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12">      
 
-					<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" iframe-onload="iframeLoadedCallback(temp)"></iframe>
+					<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" iframe-onload="iframeLoadedCallback(temp)" src="about:blank;javascript:void(0);"></iframe>
 					<form action="https://docs.google.com/forms/d/1zjikVFl9ZGzG4WroEYloA9KSzvyiZP_l2wk19BdL8LA/formResponse" method="post" target="hidden_iframe" autocomplete="off">
 						<!-- <form ng-submit="processForm()"> -->
 
@@ -147,8 +150,8 @@
 			<img src="images/features/feature6.jpg" alt="img01" class="img-responsive"/>
 		</div>
 		<div class="flex-item wrapper">
-			<h2>生活如常</h2>
-			<p>對的人我們幫你找到，飯我們幫你約好，就在你日常午飯的地方。<br/>覺得對就立刻見面在附近吃頓午飯，省卻事前溝通的時間。</p>
+			<h2 class="wowload fadeInUp">生活如常</h2>
+			<p class="wowload fadeInLeftBig">對的人我們幫你找到，飯我們幫你約好，就在你日常午飯的地方。<br/>覺得對就立刻見面在附近吃頓午飯，省卻事前溝通的時間。</p>
 		</div>
 	</div>
 
@@ -157,8 +160,8 @@
 			<img src="images/features/feature5.jpg" alt="img01" class="img-responsive"/>
 		</div>
 		<div class="flex-item wrapper">
-			<h2>深度配對</h2>
-			<p>拒絕漁翁撒網的交友方式，<br/>我們的配對機制不只流於表面。<br/>你值得更適合你的。</p>
+			<h2 class="wowload fadeInUp">深度配對</h2>
+			<p class="wowload fadeInLeftBig">拒絕漁翁撒網的交友方式，<br/>我們的配對機制不只流於表面。<br/>你值得更適合你的。</p>
 		</div>
 	</div>
 
@@ -167,16 +170,25 @@
 			<img src="images/features/feature4.jpg" alt="img01" class="img-responsive"/>
 		</div>
 		<div class="flex-item wrapper">
-			<h2>可靠</h2>
-			<p>飯約後，飯友的資料都會被互相核實和鑑定，<br/>確保你在配對過程中認識到真實的他。</p>
+			<h2 class="wowload fadeInUp">可靠</h2>
+			<p class="wowload fadeInLeftBig">飯約後，飯友的資料都會被互相核實和鑑定，<br/>確保你在配對過程中認識到真實的他。</p>
 		</div>
 	</div>
 </section>
 
-<!-- <section>
-	<p>我們的全功能平台將在下季推出。期待的同時，你可以通過下面的表格報名，優先以電郵試用飯友配對服務。</p>
-	<button class="btn btn-primary" analytics-on="click" analytics-event="BottomCTA" href="#" scroll-to="contact" >現在登記</button>
-</section> -->
+<section id="aboutus">
+	<div class="container spacer text-center">
+		<h2 class="text-center wowload fadeInUp">關於飯友</h2>
+		<div class="row wowload fadeInLeftBig">      
+			<p>我們相信，科技應該是用來改善我們的生活，連接我們的工具。<br/>因此，我們創立飯友。</p>
+			<p>飯友是一個嶄新的社交平台，併棄傳統平台互發訊息溝通的方法，抱著“對就直接見”的態度，替用戶在日常工作地區配對理想飯友，並妥善安排好一頓飯約，以最簡單、快捷、不打擾日常生活的方式來完成這一切。</p>
+			<p>通過飯友平台，用戶每天只需要幾個簡單的步驟就可以安排到一頓午飯，認識到一個新朋友，絕對省卻事前溝通的時間。用戶在提供有關他們午餐安排的基本資料之後，系統會幫助他們做其餘的一切，包括發送邀請給他們的新朋友，並等待他們回應。用戶需要做的是回去工作，準備見面和準時出現，他們唯一要付出的，只是一個一星期五天如是的午餐時間。與其單獨用膳或與不甚投契的「低頭族」同事午餐，何不利用這個機會，認識一個新飯友？</p>
+
+		</div>
+	</div>
+
+
+</section>
 
 <!-- <section id="team" >
 	<div class="container spacer ">

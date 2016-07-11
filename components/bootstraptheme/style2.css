@@ -20,8 +20,11 @@ h4 i{margin-right: 0.5em;}
 p{font-size:1em;line-height: 1.7em; margin-bottom: 1.7em;}
 
 .spacer{padding: 6em 0;}
+.spacer-top{ padding-top: 6em; }
+.spacer-bottom{ padding-bottom: 6em; }
 .spacer-small{ padding-top: 3em; padding-bottom: 3em; }
-.spacer-top-small{ padding: 3em 0 0 0; }
+.spacer-top-small{ padding-top: 3em; }
+.spacer-bottom-small{ padding-bottom: 3em; }
 
 .btn{border:none;border-radius: 0;padding: 1em 4em;background: rgba(0,0,0,0.5);text-transform: uppercase;}
 .btn:hover,.btn:active{color: #fff;}
@@ -41,7 +44,10 @@ p{font-size:1em;line-height: 1.7em; margin-bottom: 1.7em;}
 
 /*banner*/
 .banner{position: relative;}
-.banner .caption{position: absolute;top: 0;left:0; right: 0; bottom: 0;background:rgba(0,0,0,0.4); }
+.banner .caption{
+	/*position: absolute;top: 0;left:0; right: 0; bottom: 0;*/
+	background:rgba(0,0,0,0.4); 
+}
 .banner .caption-wrapper{display: table;height: 100%;width: 100%;}
 .banner .caption-info{display: table-cell;vertical-align: middle;text-align: center;color: #fff;}
 .banner .caption-info h1{
@@ -70,7 +76,7 @@ p{font-size:1em;line-height: 1.7em; margin-bottom: 1.7em;}
 .carousel-indicators li{border: 1px solid #ccc;}
 .carousel-indicators{bottom: 0;}
 .carousel-indicators .active{
-  background-color: #ccc;
+	background-color: #ccc;
 }
 
 /*foods*/
@@ -101,8 +107,16 @@ p{font-size:1em;line-height: 1.7em; margin-bottom: 1.7em;}
 
 
 
-/*contact*/
-.contactform textarea,.contactform input{width: 100%;padding:1em;border:1px solid #ccc;margin-bottom: 1em;border-radius: 0;outline: none;}
+/*signup*/
+.contactform textarea,.contactform input{
+	width: 100%;
+	padding:1em;
+	border:1px solid #ccc;
+	margin-bottom: 1em;
+	border-radius: 0;
+	outline: none;
+	line-height: normal;
+}
 /*contact*/
 
 #map{width: 100%; height: 500px;}
@@ -128,7 +142,7 @@ p{font-size:1em;line-height: 1.7em; margin-bottom: 1.7em;}
 }
 
 @media (max-width: 900px) {
-	h1{font: 700 3.5em DroidSansFallback.Roboto,Arial,Helvetica;}
+	h1{font: 700 3.5em DroidSansFallback,Roboto,Arial,Helvetica;}
 	h4 {font: 300 1.3em DroidSansFallback,Roboto,Arial,Helvetica;}
 	.btn{padding: 1em 2em;}
 	.partners img{margin: 0 15px 25px 0;width: 157px;}
@@ -154,7 +168,7 @@ p{font-size:1em;line-height: 1.7em; margin-bottom: 1.7em;}
 	h3{font-size: 1.5em;}
 	h4 {font: 300 1.2em Roboto,Arial,Helvetica;}
 	#partners h2{padding: 0 1em;} 
-	#home {padding-top: 5em;}
+	/*#home {padding-top: 5em;}*/
 
 	.partners{display: block;float: left;}
 	.partners img{width: 120px;}
@@ -163,6 +177,12 @@ p{font-size:1em;line-height: 1.7em; margin-bottom: 1.7em;}
 
 	.about.spacer{padding-left: 2em;padding-right: 2em;}
 	.spacer{padding:2em 0 ;}
+	.spacer-top{ padding-top: 2em; }
+	.spacer-bottom{ padding-bottom: 2em; }
+	.spacer-small{ padding-top: 2em; padding-bottom: 2em; }
+	.spacer-top-small{ padding-top: 2em; }
+	.spacer-bottom-small{ padding-bottom: 2em; }
+
 	.services ul li{margin-bottom: 1em;}
 
 	.highlight-info .overlay{padding-bottom: 2em;}

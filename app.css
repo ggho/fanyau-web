@@ -7,12 +7,17 @@
 
 /*** General ***/
 .wrapper{
-  padding: 3em 2em; 
+  padding: 2em 1em; 
 }
 
 
 /*** Steps ***/
 .banner .logo{width: 20%;}
+.banner.background-image{
+  background: #000 url("images/top-banner.jpg") no-repeat center center;
+  background-size: cover;
+}
+
 
 /*** Steps ***/
 #steps h3{
@@ -24,17 +29,19 @@
 }
 .step-label {
   display: inline-block;
+  position: absolute;
+  left: 20px;
+  top: 0px;
   width: 40px;
   height: 40px;
+  line-height: 36px;
   border-radius: 100%;
   font-size: 1em;
   text-align: center;
   vertical-align: baseline;
   border: #fec503 solid 2px;
   color: #fec503;
-  position: absolute;
-  left: 20px;
-  top: 0px;
+  
 }
 
 .text-primary{
@@ -43,7 +50,7 @@
 }
 
 /*** Form ***/
-#contact{
+#signup, #aboutus{
   background-color: #fafafa;
 }
 .contactform span{
@@ -51,12 +58,12 @@
 }
 
 select {
-   -webkit-appearance: none;
-   -moz-appearance: none;
-   appearance: none;
+ -webkit-appearance: none;
+ -moz-appearance: none;
+ appearance: none;
 }
 select::-ms-expand { /* for IE 11 */
-    display: none;
+  display: none;
 }
 select {
   width: 100%;
@@ -160,6 +167,9 @@ a .fa{
   .right-img{
     order: 2;
   }
+  .wrapper{
+  padding: 2.5em 2em; 
+}
 }
 
 @media (max-width: 767px){
@@ -170,4 +180,5 @@ a .fa{
     font-size: 1em;
   }
 }
+
 
