@@ -79,11 +79,15 @@ angular.module('myApp.view1', [
 	];
 
 
-
-
-
 	//iframe onload
+	$scope.isSubmitted = false;
+	$scope.formSubmit = function(){
+		$scope.isSubmitted = true;
+	}
 	$scope.iframeLoadedCallback = function(temp){	 	
+		if(!$scope.isSubmitted){
+			return;
+		}
 		$location.path('/thankyou');
 		$scope.$apply();
 
@@ -97,7 +101,6 @@ angular.module('myApp.view1', [
 		smoothScroll(element);
 	}
 
-	// $scope.processForm();
 
 }])
 
