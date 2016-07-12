@@ -69,16 +69,16 @@
 					<form action="https://docs.google.com/forms/d/1zjikVFl9ZGzG4WroEYloA9KSzvyiZP_l2wk19BdL8LA/formResponse" method="post" target="hidden_iframe" autocomplete="off" ng-submit="formSubmit()">
 						<!-- <form ng-submit="processForm()"> -->
 
-						<input type="text" placeholder="名字" name="entry.1163971110" ng-model="formData['entry.1163971110']"  >
+						<input type="text" placeholder="名字" name="entry.1163971110" ng-model="formData['entry.1163971110']" required>
 						<div class="sel">
-							<select name="entry.2052552941"   >
+							<select name="entry.2052552941" required >
 								<option value="" disabled selected hidden>－姓別－</option>
 								<option value="Male">男</option>
 								<option value="Female">女</option>
 							</select>
 						</div>
 						<div class="sel">
-							<select name="entry.1577935524"  >
+							<select name="entry.1577935524" required>
 								<option value="" disabled selected hidden>－年齡－</option>
 								<option value="<21">&lt; 21</option>
 								<option value="21-25">21 - 25</option>
@@ -88,7 +88,7 @@
 								<option value=">40">&gt; 40</option>
 							</select>
 						</div>
-						<input type="text" placeholder="工作地點，例如：灣仔" name="entry.1413818209" list="districts"  >
+						<input type="text" placeholder="工作地點，例如：灣仔" name="entry.1413818209" list="districts" required>
 						<datalist id="districts">
 							<option  data-ng-repeat="district in districts" value="{{district}}"/>
 						</datalist>
@@ -114,7 +114,7 @@
 						</div>
 
 						<div class="sel">
-							<select name="entry.1672791290"  >
+							<select name="entry.1672791290" required>
 								<option value="" disabled selected hidden>想找誰當飯友？</option>
 								<option value="Male">男士</option>
 								<option value="Female">女士</option>
@@ -122,7 +122,7 @@
 							</select>
 						</div>
 						<div class="sel">
-							<select name="entry.1518902865"  >
+							<select name="entry.1518902865" required>
 								<option value="" disabled selected hidden>你是否在找對象？</option>
 								<option value="Yes">是</option>
 								<option value="No">否</option>
@@ -131,7 +131,7 @@
 						</div>
 						<input type="text" placeholder="簡單介紹一下自己" name="entry.1436334537">
 						<input type="text" placeholder="你感興趣的話題" name="entry.610114913">
-						<input type="text" placeholder="電郵" name="entry.1686852758"  >
+						<input type="text" placeholder="電郵" name="entry.1686852758" required>
 
 
 						<!-- <textarea rows="5" placeholder="Message"></textarea> -->
