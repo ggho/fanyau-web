@@ -14,10 +14,9 @@
 /*** Steps ***/
 .banner .logo{width: 20%;}
 .banner.background-image{
-  background: #000 url("images/top-banner.jpg") no-repeat center center;
+  background: #111 url("images/top-banner.jpg") no-repeat center center;
   background-size: cover;
 }
-
 
 /*** Steps ***/
 #steps h3{
@@ -46,11 +45,12 @@
 
 .text-primary{
   color: #fec503;
+  font-weight: bold;
 
 }
 
 /*** Form ***/
-#signup{
+.secondary-section{
   background-color: #fafafa;
 }
 .contactform span{
@@ -139,20 +139,7 @@ select {
   /*background-color: #803F0B;*/
   background-color: #fec503; /*yellow*/
 }
-a .fa{
-  color: #fff;
-}
-a .fa:hover, a .fa:active{
-  color: #ccc;
-}
-a .fa,,a .fa:hover {
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  outline: none !important;
-}
+
 
 /*** People ***/
 .carousel-inner > .item {
@@ -164,6 +151,15 @@ a .fa,,a .fa:hover {
   text-align: center;
 }
 
+/*Feedback*/
+#feedback{
+  background: #111 url("images/feedback-bg.jpg") no-repeat center center;
+  background-size: cover;
+}
+#feedback a{
+  text-decoration: underline;
+}
+
 /*** Footer ***/
 .footer{
   /*background-color: #fed136;  /*yellow*/
@@ -171,18 +167,7 @@ a .fa,,a .fa:hover {
 }
 
 /*media size dependent*/
-@media (min-width: 768px){
-  .flex-item{
-    flex-basis: 50%;
-  }
-  .right-img{
-    order: 2;
-  }
-  .wrapper{
-  padding: 2.5em 2em; 
-}
-}
-
+/*Tablet below*/
 @media (max-width: 767px){
   .banner .caption-info h1 {
     font-size: 1.8em;
@@ -191,5 +176,26 @@ a .fa,,a .fa:hover {
     font-size: 1em;
   }
 }
+
+/*Tablet and above*/
+@media (min-width: 768px){
+  .flex-item{
+    flex-basis: 50%;
+  }
+  .right-img{
+    order: 2;
+  }
+  .wrapper{
+    padding: 2.5em 2em; 
+  }
+}
+
+/*Laptop or above*/
+@media (min-width: 1024px){
+  .wrapper {
+    padding: 4em 3.5em;
+  }
+}
+
 
 
