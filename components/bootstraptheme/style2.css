@@ -44,12 +44,14 @@ p{font-size:1em;line-height: 1.7em; margin-bottom: 1.7em;}
 
 /*banner*/
 .banner{position: relative;}
+.banner{color: #fff;}
 .banner .caption{
 	/*position: absolute;top: 0;left:0; right: 0; bottom: 0;*/
 	background:rgba(0,0,0,0.4); 
 }
 .banner .caption-wrapper{display: table;height: 100%;width: 100%;}
-.banner .caption-info{display: table-cell;vertical-align: middle;text-align: center;color: #fff;}
+
+.banner .caption-info{display: table-cell;vertical-align: middle;text-align: center;}
 .banner .caption-info h1{
 	font: normal 4em DroidSansFallback,Helvetica,Arial; 
 	text-transform:capitalize;
@@ -57,7 +59,22 @@ p{font-size:1em;line-height: 1.7em; margin-bottom: 1.7em;}
 }
 
 .banner .caption-info p{font:600 1.7em "Josefin Sans",Helvetica,Arial;}
-.banner a.explore{color: #fff;}
+
+.banner a{
+  color: #fff;
+}
+.banner a:hover, .banner a:active{
+  color: #ccc;
+}
+.banner a, .banner a:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  outline: none !important;
+}
+
 
 /*about*/
 .about.spacer{padding-left: 4em; padding-right: 4em;padding-bottom: 0;}
@@ -122,8 +139,27 @@ p{font-size:1em;line-height: 1.7em; margin-bottom: 1.7em;}
 #map{width: 100%; height: 500px;}
 #map p{margin: 0 !important;}
 
-.footer{background-color: #111; color: #fff; font-size: 1em;color: #aaa;}
-.footer a{color: #aaa;margin: 0 1em; }
+.footer{
+	/*background-color: #ccc; */
+	/*color: #fff; */
+	font-size: 1em;
+	color: #aaa;
+}
+.footer a{
+	color: #aaa;
+	margin: 0 1em; 
+}
+.footer a:hover, .footer a:active{
+  color: #777;
+}
+.footer a, .footer a:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  outline: none !important;
+}
 
 .gototop{position: fixed;bottom: 20px; right: 20px;background: rgba(0,0,0,0.5);padding: 10px;color: #fff;}
 .gototop i{line-height: 0.5em;}
