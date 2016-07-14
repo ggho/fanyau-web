@@ -57,7 +57,7 @@ p{font-size:1em;line-height: 1.7em; margin-bottom: 1.7em;}
 	text-transform:capitalize;
 	line-height: 2em;
 }
-
+.banner p{font-size: 1.2em;}
 .banner .caption-info p{font:600 1.7em "Josefin Sans",Helvetica,Arial;}
 
 .banner a{
